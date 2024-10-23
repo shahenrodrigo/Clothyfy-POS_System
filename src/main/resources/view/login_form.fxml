@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="scenePane" prefHeight="332.0" prefWidth="467.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <BorderPane fx:id="borderPane" layoutX="-3.0" layoutY="-1.0" prefHeight="240.0" prefWidth="480.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="340.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="480.0">
+         <fill>
+            <LinearGradient endX="0.6363636219140255" endY="0.3787878571134625" startY="0.4090909524397417">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9204276204109192" green="0.11999999731779099" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextField fx:id="txtEmail" layoutX="129.0" layoutY="120.0" prefHeight="25.0" prefWidth="210.0" promptText="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPassword" layoutX="129.0" layoutY="181.0" prefHeight="25.0" prefWidth="210.0" promptText="Password" />
+      <JFXButton layoutX="191.0" layoutY="260.0" onAction="#btnLogInOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #f1c40f;" text="Log In">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="189.0" layoutY="26.0" text="Log In">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="129.0" layoutY="233.0" onAction="#lnkForgotPasswordOnAction" text="Forgot Password?" />
+      <Hyperlink layoutX="186.0" layoutY="301.0" onAction="#lnkCreateAccountOnAction" text="Create Account" />
+      <JFXComboBox fx:id="cmbPosition" layoutX="186.0" layoutY="78.0" prefHeight="25.0" prefWidth="102.0" promptText="User Role" />
+   </children>
+</AnchorPane>

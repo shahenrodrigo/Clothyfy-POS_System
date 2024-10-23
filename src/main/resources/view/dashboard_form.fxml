@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="310.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="753.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.4886363491867528">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5254902243614197" green="0.2823529541492462" blue="0.2823529541492462" opacity="0.9700000286102295" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9797530770301819" green="0.8481481671333313" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="205.0" stroke="BLACK" strokeType="INSIDE" width="753.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9058823585510254" green="0.8039215803146362" blue="0.8039215803146362" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.821052610874176" green="0.2189473658800125" blue="0.7307368516921997" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="250.0" layoutY="73.0" text="CLOTHIFY">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="520.0" layoutY="401.0" onAction="#btnLogInOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #f1c40f;" text="Log In">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtEmail" layoutX="291.0" layoutY="266.0" prefHeight="25.0" prefWidth="172.0" promptText="Email" />
+      <JFXButton layoutX="367.0" layoutY="401.0" onAction="#btnRegisterOnAction" prefHeight="35.0" prefWidth="112.0" style="-fx-background-color: #f1c40f;" text="Register">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtPassword" layoutX="291.0" layoutY="330.0" prefHeight="25.0" prefWidth="172.0" promptText="Password" />
+      <Label layoutX="315.0" layoutY="223.0" text="Create Account">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
