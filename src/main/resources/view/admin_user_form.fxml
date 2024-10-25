@@ -1,88 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="577.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminUserFormController">
+<AnchorPane prefHeight="583.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminUserFormController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="583.0" stroke="BLACK" strokeType="INSIDE" width="879.0">
-         <fill>
-            <LinearGradient endX="1.0" endY="0.14393936504017227" startX="0.37500000000000006" startY="0.1249999711007783">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.800000011920929" green="0.04148148000240326" blue="0.20582716166973114" opacity="0.5299999713897705" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.006729475100942127">
-                     <color>
-                        <Color red="0.800000011920929" green="0.04800000041723251" blue="0.21093332767486572" opacity="0.5299999713897705" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.006729475100942127">
-                     <color>
-                        <Color red="0.800000011920929" green="0.04800000041723251" blue="0.21093332767486572" opacity="0.5299999713897705" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.009132390112595526">
-                     <color>
-                        <Color red="0.800000011920929" green="0.04800000041723251" blue="0.21093332767486572" opacity="0.5299999713897705" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.01642648458786066">
-                     <color>
-                        <Color red="0.800000011920929" green="0.04800000041723251" blue="0.21093332767486572" opacity="0.5299999713897705" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.04390243902439025">
-                     <color>
-                        <Color red="0.800000011920929" green="0.04800000041723251" blue="0.21093332767486572" opacity="0.5299999713897705" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.04635131142697701">
-                     <color>
-                        <Color red="0.800000011920929" green="0.04800000041723251" blue="0.21093332767486572" opacity="0.5299999713897705" />
-                     </color>
-                  </Stop>
-                  <Stop offset="0.09499064438827436">
-                     <color>
-                        <Color red="0.800000011920929" green="0.04800000041723251" blue="0.21093332767486572" opacity="0.5299999713897705" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.5254902243614197" green="0.2823529541492462" blue="0.2823529541492462" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="583.0" stroke="BLACK" strokeType="INSIDE" width="879.0" />
       <BorderPane fx:id="borderPane" prefHeight="580.0" prefWidth="880.0" AnchorPane.bottomAnchor="3.2000000000000455">
          <left>
-            <VBox alignment="TOP_CENTER" prefHeight="530.0" prefWidth="215.0" style="-fx-background-color: f1c40f;" BorderPane.alignment="CENTER">
+            <VBox alignment="TOP_CENTER" prefHeight="530.0" prefWidth="215.0" style="-fx-background-color: #bdc3c7;" BorderPane.alignment="CENTER">
                <children>
                   <Pane prefHeight="87.0" prefWidth="214.0" />
-                  <JFXButton onAction="#btnEmployeesOnAction" prefHeight="60.0" prefWidth="214.0" style="-fx-background-color: f1c40f;" text="Employees" />
-                  <JFXButton onAction="#btnSuppliersOnAction" prefHeight="60.0" prefWidth="219.0" text="Suppliers" />
-                  <JFXButton onAction="#btnProductsOnAction" prefHeight="60.0" prefWidth="239.0" text="Products" />
-                  <JFXButton onAction="#btnReportsOnAction" prefHeight="60.0" prefWidth="218.0" text="Reports" />
-                  <JFXButton layoutX="10.0" layoutY="308.0" onAction="#btnLogOutOnAction" prefHeight="60.0" prefWidth="218.0" text="Log Out" />
+                  <JFXButton onAction="#btnEmployeesOnAction" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #e67e22;" text="Employees" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="40.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnSuppliersOnAction" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #e67e22;" text="Suppliers" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></JFXButton>
+                  <JFXButton onAction="#btnProductsOnAction" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #e67e22;" text="Products" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></JFXButton>
+                  <JFXButton onAction="#btnReportsOnAction" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #e67e22;" text="Reports" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="308.0" onAction="#btnLogOutOnAction" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #e67e22;" text="Log Out" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></JFXButton>
                </children>
             </VBox>
          </left>
       </BorderPane>
-      <Label fx:id="lblTitle" layoutX="427.0" layoutY="26.0" prefHeight="42.0" prefWidth="302.0" text="ADMIN DASHBOARD">
+      <Label fx:id="lblTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="384.0" layoutY="26.0" prefHeight="43.0" prefWidth="345.0" text="  ADMIN DASHBOARD">
          <font>
             <Font name="System Bold" size="29.0" />
          </font>

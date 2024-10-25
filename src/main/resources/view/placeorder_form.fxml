@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="524.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceorderFormController">
+<AnchorPane prefHeight="524.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceorderFormController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="124.0" layoutX="-10.0" stroke="BLACK" strokeType="INSIDE" width="704.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="85.0" layoutX="-10.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="704.0">
          <fill>
-            <LinearGradient endX="0.5833333333333333" endY="0.484848470398874" startY="0.49242424242424243">
+            <LinearGradient endX="0.268939404776602" startX="0.2613636444915425" startY="0.6742424188238201">
                <stops>
                   <Stop>
                      <color>
@@ -28,136 +20,119 @@
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
+                        <Color red="1.0" green="0.8999999761581421" blue="0.9900000095367432" />
                      </color>
                   </Stop>
                </stops>
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Label layoutX="224.0" layoutY="42.0" prefHeight="41.0" prefWidth="246.0" text="PLACE ORDER">
+      <Label alignment="CENTER" layoutX="224.0" layoutY="7.0" prefHeight="41.0" prefWidth="246.0" text="PLACE ORDER">
          <font>
-            <Font name="System Bold" size="34.0" />
+            <Font name="System Bold" size="29.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" layoutX="-10.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" width="704.0">
-         <fill>
-            <LinearGradient endX="0.5643939755179666" endY="0.5227272447311516" startY="0.53409092354052">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.8842105269432068" green="0.19649122655391693" blue="0.8727485537528992" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
-      <TextField fx:id="txtName" layoutX="313.0" layoutY="169.0" prefHeight="35.0" prefWidth="152.0" promptText="Name">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="461.0" layoutX="-10.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="704.0" />
+      <TextField fx:id="txtName" layoutX="37.0" layoutY="148.0" prefHeight="26.0" prefWidth="152.0" promptText="Name">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtPrice" layoutX="177.0" layoutY="223.0" prefHeight="35.0" prefWidth="152.0" promptText="Price">
+      <TextField fx:id="txtPrice" layoutX="218.0" layoutY="202.0" prefHeight="27.0" prefWidth="152.0" promptText="Price">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtCategory" layoutX="40.0" layoutY="223.0" prefHeight="35.0" prefWidth="117.0" promptText="Category">
+      <TextField fx:id="txtCategory" layoutX="218.0" layoutY="147.0" prefHeight="31.0" prefWidth="152.0" promptText="Category">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtQty" layoutX="382.0" layoutY="223.0" prefHeight="35.0" prefWidth="107.0" promptText="Qty">
+      <TextField fx:id="txtQty" layoutX="37.0" layoutY="202.0" prefHeight="31.0" prefWidth="152.0" promptText="Qty">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TableView fx:id="tblEmployees" layoutX="17.0" layoutY="287.0" prefHeight="201.0" prefWidth="495.0" style="-fx-background-color: #f1c40f;">
+      <TableView fx:id="tblEmployees" layoutX="17.0" layoutY="279.0" prefHeight="201.0" prefWidth="495.0" style="-fx-background-color: #bdc3c7;">
         <columns>
           <TableColumn fx:id="colId" prefWidth="53.0" text="ID" />
-          <TableColumn fx:id="colName" prefWidth="154.0" text="NAME" />
-            <TableColumn fx:id="colQty" prefWidth="62.0" text="QTY" />
+          <TableColumn fx:id="colName" prefWidth="143.20000457763672" text="NAME" />
+            <TableColumn fx:id="colQty" prefWidth="65.5999755859375" text="QTY" />
             <TableColumn fx:id="colUnitPrice" prefWidth="124.0" text="UNIT PRICE" />
-            <TableColumn fx:id="colTotal" prefWidth="101.0" text="TOTAL" />
+            <TableColumn fx:id="colTotal" prefWidth="109.60006713867188" text="TOTAL" />
         </columns>
       </TableView>
-      <JFXButton layoutX="532.0" layoutY="223.0" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #f1c40f;" text="Add">
+      <JFXButton layoutX="446.0" layoutY="214.0" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: #2ecc71;" text="Add" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="532.0" layoutY="452.0" onAction="#btnPlaceorderOnAction" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #f1c40f;" text="Place Order">
+      <JFXButton layoutX="537.0" layoutY="442.0" onAction="#btnPlaceorderOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #c0392b;" text="Place Order" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="532.0" layoutY="408.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #f1c40f;" text="Delete">
+      <JFXButton layoutX="538.0" layoutY="397.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #e67e22;" text="Delete" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="532.0" layoutY="364.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #f1c40f;" text="Update">
+      <JFXButton layoutX="555.0" layoutY="215.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <Line endX="606.0" layoutX="87.0" layoutY="275.0" startX="-100.0" />
-      <Label layoutX="41.0" layoutY="175.0" text="Order Id: ">
+      <Line endX="606.0" layoutX="87.0" layoutY="260.0" startX="-100.0" />
+      <Label layoutX="183.0" layoutY="75.0" text="Order Id: ">
          <font>
-            <Font size="16.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="lblId" layoutX="120.0" layoutY="175.0" text="ID">
+      <Label fx:id="lblId" layoutX="262.0" layoutY="74.0" text="ID">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="525.0" layoutY="158.0" text="Date: ">
+      <Label layoutX="505.0" layoutY="75.0" text="Date: ">
          <font>
-            <Font size="17.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="525.0" layoutY="187.0" text="Time: ">
+      <Label layoutX="505.0" layoutY="103.0" text="Time: ">
          <font>
-            <Font size="17.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" layoutX="571.0" layoutY="158.0" text="dd/mm/yyyy">
+      <Label fx:id="lblDate" layoutX="560.0" layoutY="74.0" text="dd/mm/yyyy">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="lblTime" layoutX="576.0" layoutY="187.0" text="hh:mm:ss">
+      <Label fx:id="lblTime" layoutX="560.0" layoutY="104.0" prefHeight="26.0" prefWidth="83.0" text="hh:mm:ss">
          <font>
-            <Font size="17.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="131.0" text="Emp Id: ">
+      <Label layoutX="37.0" layoutY="75.0" text="Emp Id: ">
          <font>
-            <Font size="16.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="lblEmpId" layoutX="114.0" layoutY="131.0" text="dd/mm/yyyy">
+      <Label fx:id="lblEmpId" layoutX="106.0" layoutY="74.0" text="Em ID">
          <font>
-            <Font size="17.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="499.0" text="Net Total:">
+      <Label layoutX="20.0" layoutY="492.0" text="Net Total:">
          <font>
-            <Font size="17.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Label fx:id="lblTotal" layoutX="109.0" layoutY="499.0" text="0.00">
+      <Label fx:id="lblTotal" layoutX="109.0" layoutY="493.0" text="0.00">
          <font>
-            <Font size="17.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <JFXComboBox fx:id="cmbItemCode" layoutX="185.0" layoutY="174.0" promptText="Item Code" />
+      <JFXComboBox fx:id="cmbItemCode" layoutX="340.0" layoutY="74.0" promptText="Item Code" />
    </children>
 </AnchorPane>

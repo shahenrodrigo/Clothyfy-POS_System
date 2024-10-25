@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.SuppliersFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="577.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SuppliersFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="580.0" layoutX="-3.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="700.0" />
+      <TextField fx:id="txtEmail" layoutX="258.0" layoutY="182.0" prefHeight="26.0" prefWidth="171.0" promptText="Email" />
+      <TextField fx:id="txtCompany" layoutX="258.0" layoutY="256.0" prefHeight="26.0" prefWidth="171.0" promptText="Company" />
+      <TextField fx:id="txtItem" layoutX="258.0" layoutY="219.0" prefHeight="26.0" prefWidth="171.0" promptText="Item" />
+      <TextField fx:id="txtName" layoutX="259.0" layoutY="142.0" prefHeight="26.0" prefWidth="171.0" promptText="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblSupplier" layoutX="27.0" layoutY="339.0" prefHeight="200.0" prefWidth="495.0" style="-fx-background-color: #bdc3c7;">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="53.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="98.0" text="NAME" />
+            <TableColumn fx:id="colEmail" prefWidth="132.0" text="EMAIL" />
+            <TableColumn fx:id="colCompany" prefWidth="103.0" text="COMPANY" />
+            <TableColumn fx:id="colItem" prefWidth="108.0" text="ITEM" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="477.0" layoutY="246.0" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: #2ecc71;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="568.0" layoutY="247.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="555.0" layoutY="501.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Line endX="600.0" layoutX="97.0" layoutY="304.0" startX="-100.0" />
+      <Label fx:id="lblId" alignment="CENTER" layoutX="129.0" layoutY="89.0" prefHeight="26.0" prefWidth="46.0" text="ID">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="88.0" text="Supplier Id: ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

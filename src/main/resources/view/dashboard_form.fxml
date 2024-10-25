@@ -10,30 +10,12 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="310.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="753.0">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="0.4886363491867528">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.5254902243614197" green="0.2823529541492462" blue="0.2823529541492462" opacity="0.9700000286102295" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.9797530770301819" green="0.8481481671333313" blue="1.0" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="310.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="753.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="205.0" stroke="BLACK" strokeType="INSIDE" width="753.0">
          <fill>
-            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+            <LinearGradient endX="0.2765151731895678" endY="1.0" startX="0.22348484532399612" startY="0.5037878733692747">
                <stops>
                   <Stop>
                      <color>
@@ -42,33 +24,39 @@
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="0.821052610874176" green="0.2189473658800125" blue="0.7307368516921997" />
+                        <Color red="0.4941176474094391" green="0.062745101749897" blue="0.45098039507865906" />
                      </color>
                   </Stop>
                </stops>
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Label layoutX="250.0" layoutY="73.0" text="CLOTHIFY">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="227.0" layoutY="73.0" prefHeight="75.0" prefWidth="294.0" text="CLOTHIFY" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="20.0" />
+            <Font name="System Bold Italic" size="52.0" />
          </font>
       </Label>
-      <JFXButton layoutX="520.0" layoutY="401.0" onAction="#btnLogInOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #f1c40f;" text="Log In">
+      <JFXButton layoutX="429.0" layoutY="401.0" onAction="#btnLogInOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #e67e22;" text="Log In" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <TextField fx:id="txtEmail" layoutX="291.0" layoutY="266.0" prefHeight="25.0" prefWidth="172.0" promptText="Email" />
-      <JFXButton layoutX="367.0" layoutY="401.0" onAction="#btnRegisterOnAction" prefHeight="35.0" prefWidth="112.0" style="-fx-background-color: #f1c40f;" text="Register">
+      <TextField fx:id="txtEmail" alignment="CENTER" layoutX="261.0" layoutY="268.0" prefHeight="31.0" prefWidth="208.0" promptText="Email" style="-fx-border-color: #2c3e50;">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <JFXButton layoutX="217.0" layoutY="401.0" onAction="#btnRegisterOnAction" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #e67e22;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <TextField fx:id="txtPassword" layoutX="291.0" layoutY="330.0" prefHeight="25.0" prefWidth="172.0" promptText="Password" />
-      <Label layoutX="315.0" layoutY="223.0" text="Create Account">
+      <TextField fx:id="txtPassword" alignment="CENTER" layoutX="261.0" layoutY="328.0" prefHeight="31.0" prefWidth="208.0" promptText="Password" style="-fx-border-color: #2c3e50;">
          <font>
-            <Font size="15.0" />
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="290.0" layoutY="223.0" prefHeight="22.0" prefWidth="149.0" text="Create Account">
+         <font>
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
    </children>

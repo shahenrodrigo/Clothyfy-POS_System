@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.RecoveryFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="scenePane" prefHeight="338.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RecoveryFormController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="339.0" prefWidth="480.0">
+         <right>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="340.0" stroke="BLACK" strokeType="INSIDE" width="482.0" BorderPane.alignment="CENTER">
+               <fill>
+                  <LinearGradient endX="0.3484848195856267" endY="1.0" startX="0.2348485205209616" startY="0.5568181745933765">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7944444417953491" green="0.5929824709892273" blue="0.821052610874176" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.4000000059604645" green="0.032592590898275375" blue="0.36938270926475525" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+         </right>
+      </BorderPane>
+      <JFXButton layoutX="277.0" layoutY="273.0" onAction="#btnSubmitOnAction" prefHeight="35.0" prefWidth="83.0" style="-fx-background-color: #f1c40f;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="378.0" layoutY="273.0" onAction="#btnCancelOnAction" prefHeight="35.0" prefWidth="83.0" style="-fx-background-color: #e74c3c;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <TextField fx:id="txtEmail" layoutX="123.0" layoutY="121.0" prefHeight="35.0" prefWidth="235.0" promptText="Email" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="30.0" prefHeight="32.0" prefWidth="235.0" text="Password Recovery">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Label>
+      <Label layoutX="122.0" layoutY="148.0" prefHeight="41.0" prefWidth="210.0" text=" Enter the e-mail your account">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font></Label>
+   </children>
 </AnchorPane>
